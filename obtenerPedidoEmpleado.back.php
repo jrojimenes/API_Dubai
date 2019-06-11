@@ -18,7 +18,9 @@ foreach($result as $row) {
   $e->fiIdEmpleado            = $row['Numero_Empleado'];
   $e->fcnombreEmpleado        = $row['Nombre_Empleado'];
   $e->fiTallaPantalon         = $row['Talla_Pantalon'];
+  if ($params->fiIdTipoEmpleado == 2){
   $e->fcTallaPlayera          = $row['Talla_Plallera'];
+  }
   $e->fcnombrePrenda          = $row['Prenda'];
   $e->fcColorPrenda           = $row['Color_Prenda'];
   $e->fcUrlImagen             = $row['Url_Imagen'];
